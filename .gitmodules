@@ -1,0 +1,6 @@
+[submodule "ZIP20205-Exercise-1"]
+	path = ZIP20205-Exercise-1
+	url = https://github.com/nithiroj-nuntavanoatyan/ZIP2025-Exercise-1.git
+[submodule "hello-zip2025"]
+	path = hello-zip2025
+	url = https://github.com/nithiroj-nuntavanoatyan/hello-zip2025.git
