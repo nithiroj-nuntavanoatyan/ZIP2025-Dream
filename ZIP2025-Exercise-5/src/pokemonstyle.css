@@ -11,7 +11,7 @@
   --main-darkmode-text-color: #ffffff;
   --main-darkmode-card-default-color: #807ca1;
   --main-darkmode-hover-color: #a59bff;
-  --main-focustext-color: #000000;
+  --main-darkmode-focustext-color: #000000;
   --main-darkmode-focuspokemoncard-color: #fdc905;
 }
 
@@ -107,7 +107,7 @@ body {
 
 .pokemoncard:focus {
   background-color: var(--main-focuspokemoncard-color);
-  color: var(--main-focustext-color);
+  color: var(--main-focustext-color)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -131,7 +131,7 @@ body {
 
   .pokemoncard:focus {
     background-color: var(--main-darkmode-focuspokemoncard-color);
-    color: var(--main-focustext-color);
+    color: var(--main-darkmode-focustext-color);
   }
 
 }
