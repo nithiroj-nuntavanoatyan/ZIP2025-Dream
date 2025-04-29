@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="Poke_Ball.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/ZIP2025-Exercise-3/src/pokemonstyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/pokemonstyle.css" />
+    <link rel="stylesheet" href="src/toggleswitch.css">
+
+    <title>Pokemon Web App</title>
+  </head>
+  <body>
+    <section class="header">
+      <img
+        class="pokemonlogo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/800px-International_Pok%C3%A9mon_logo.svg.png"
+        alt="Pokemon Header"
+      />
+    </section>
+
+    <div class="pokedex">
+      <section class="showpokemontype">
+        <div class="spaceforshowtypeandstatus">
+          <label for="Type" class="labelofdropdown">Type</label>
+          <select name="type" id="type" class="selectdropdown">
+            <option value="Fire" class="dropdowntext">Fire</option>
+            <option value="Electric" class="dropdowntext">Electric</option>
+            <option value="Water" class="dropdowntext">Water</option>
+            <option value="Earth" class="dropdowntext">Earth</option>
+          </select>
+
+          <label for="Capture" class="labelofdropdown">Capture status</label>
+          <select name="type" id="type" class="selectdropdown">
+            <option value="Any" class="dropdowntext">Any</option>
+            <option value="Capture" class="dropdowntext">Capture</option>
+            <option value="notcapture" class="dropdowntext">Not-Capture</option>
+            <option value="unknown" class="dropdowntext">Unknown</option>
+          </select>
+        </div>
+        
+      </section>
+
+      <section class="Showpokemoncard-grid">
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png"
+            class="pokemonpicture"
+            alt="Pikachu Picture"
+          />
+
+          <h3 class="pokemonname">Pikachu</h3>
+          <h4 class="pokemontype">Electric</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/094.png"
+            class="pokemonpicture"
+            alt="Gengar Picture"
+          />
+
+          <h3 class="pokemonname">Gengar</h3>
+          <h4 class="pokemontype">Ghost & Poison</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/143.png"
+            class="pokemonpicture"
+            alt="Snorlax Picture"
+          />
+
+          <h3 class="pokemonname">Snorlax</h3>
+          <h4 class="pokemontype">Normal</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png"
+            class="pokemonpicture"
+            alt="Charlizard Picture"
+          />
+
+          <h3 class="pokemonname">Charlizard</h3>
+          <h4 class="pokemontype">Fire & Flying</h4>
+
+          <div class="check-box" tabindex="0">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/384.png"
+            class="pokemonpicture"
+            alt="Rayquaza Picture"
+          />
+
+          <h3 class="pokemonname">Rayquaza</h3>
+          <h4 class="pokemontype">Dragon & Flying</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/068.png"
+            class="pokemonpicture"
+            alt="Machamp  Picture"
+          />
+
+          <h3 class="pokemonname">Machamp </h3>
+          <h4 class="pokemontype">Fighting</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/383.png"
+            class="pokemonpicture"
+            alt="Groudon Picture"
+          />
+
+          <h3 class="pokemonname">Groudon</h3>
+          <h4 class="pokemontype">Ground</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/150.png"
+            class="pokemonpicture"
+            alt="Mewtwo Picture"
+          />
+
+          <h3 class="pokemonname">Mewtwo</h3>
+          <h4 class="pokemontype">Psychic</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/130.png"
+            class="pokemonpicture"
+            alt="Gyarados Picture"
+          />
+
+          <h3 class="pokemonname">Gyarados</h3>
+          <h4 class="pokemontype">Water & Flying</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+        <div class="pokemoncard" tabindex="0">
+          <img
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/132.png"
+            class="pokemonpicture"
+            alt="Ditto  Picture"
+          />
+
+          <h3 class="pokemonname">Ditto </h3>
+          <h4 class="pokemontype">Normal</h4>
+
+          <div class="check-box">
+            <input type="checkbox" />
+            <label for="capturestatus" class="captureofstatus">Captured</label>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </body>
+</html>
