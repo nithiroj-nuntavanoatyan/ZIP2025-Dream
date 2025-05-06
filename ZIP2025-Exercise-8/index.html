@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <title>Simple Calculator </title>
+</head>
+
+<body class="bg-[#21130d] h-full w-full">
+  <div class="flex justify-center items-center min-h-screen">
+
+    <div class="calculatorwithhead">
+      <h1 class="text-5xl lg:text-7xl text-white flex justify-center items-center m-2">Calculator</h1>
+      <div class="calculator flex flex-col justify-center items-center bg-[#eeeee4] p-4 rounded-4xl">
+        <div previous-data-operation
+          class="bg-gray-400 text-right text-white text-2xl lg:text-4xl w-full h-6 lg:h-10 border-b-2"></div>
+        <div current-data-operation class="bg-gray-400 text-right text-white text-3xl lg:text-5xl w-full h-8 lg:h-12">
+        </div>
+        <div class="calculator-button grid grid-cols-4 gap-2 text-2xl lg:text-6xl bg-[#eeeee4] p-2 w-full">
+          <!-- First row -->
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-clear>C</button>
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-inverse>+/-</button>
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-operation>%</button>
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-operation>÷</button>
+          <!-- Second row -->
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>7</button>
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>8</button>
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>9</button>
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-operation>x</button>
+          <!-- Third row -->
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>4</button>
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>5</button>
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>6</button>
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-operation>-</button>
+          <!-- Fourth row -->
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>1</button>
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>2</button>
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>3</button>
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-operation>+</button>
+          <!-- fifth row -->
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer col-span-2"
+            data-number>0</button>
+          <button class="bg-[#154c79] hover:bg-[#1e81b0] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-number>.</button>
+          <button class="bg-[#e28743] hover:bg-[#eab676] text-white font-bold p-1 rounded-3xl cursor-pointer"
+            data-equal>=</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="src/calculator.js"></script>
+</body>
+
+
+</html>
