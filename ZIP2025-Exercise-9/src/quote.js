@@ -13,12 +13,12 @@ let totalpage = 1;
 function fetchquoteandrender(limit, skip) {
     fetch(`https://dummyjson.com/quotes?limit=${limit}&skip=${skip}`)
       .then(res => res.json())
-      .then(data => {
-        totalitem = data.total;
+      .then(quotedata => {
+        totalitem = quotedata.total;
         totalpage = Math.ceil(totalitem / itemperpage);
 
         ShowQuoteContainer.innerHTML = '';
-        data.quotes.forEach(quote => {
+        quotedata.quotes.forEach(quote => {
           const card = document.createElement('div');
           card.className = 'bg-[#8f5555] rounded-xl p-2 ';
 
