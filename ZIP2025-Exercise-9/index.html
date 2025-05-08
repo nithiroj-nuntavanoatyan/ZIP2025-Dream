@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap"
+    rel="stylesheet">
+  <title>Quote App</title>
+</head>
+
+<body class="m-2 p-2 lg:m-8 lg:p-8 bg-[#1e0b0b] text-[#ffffff] ">
+
+  <h1 class=" text-4xl lg:text-6xl font-bold flex ">Random Quote</h1>
+  <div class="bg-[#c84b4b] rounded-2xl  ">
+    <div class="flex flex-col p-2 mt-4 text-5xl">
+      <h2 id="randomquotetext" class="text-3xl lg:text-5xl wrap-normal font-semibold border-b-4 py-4">Lorem .......</h2>
+      <h3 id="randomquoteauthor" class="text-2xl lg:text-4xl mt-2"> By </h3>
+      <div>
+        <button id="randomButton"
+          class="bg-[#993333] rounded-2xl text-xl lg:text-2xl p-2 mt-2 flex float-right cursor-pointer ">Random</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <section class="otherquote mt-4">
+    <div>
+      <h4 class="text-2xl lg:text-4xl mb-2">Item per page</h4>
+      <div class="flex justify-between items-center text-xl lg:text-3xl">
+        <select name="itemperpage" id="numberofitemperpage" class=" bg-[#c84b4b] text-white rounded-xl sm:p-1">
+          <option value="5" selected="selected">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+        <div id="pagenumber" class=" text-white rounded-xl p-1 flex justify-between">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="OtherQuote mt-4">
+    <div id="ShowQuoteContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <!-- <div id="Quotebox" class="bg-[#8f5555] rounded-xl p-2">
+        <h6 id="QuoteWord" class="text-2xl wrap-normal">Lorem ipsum .....................</h6>
+        <p id="Quoteauthor" class="text-xl wrap-normal">By </p>
+      </div> -->
+    </div>
+  </section>
+  <script src="src/quote.js"></script>
+</body>
+
+</html>
