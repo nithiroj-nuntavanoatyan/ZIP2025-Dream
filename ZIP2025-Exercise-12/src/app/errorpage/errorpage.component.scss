@@ -1,0 +1,13 @@
+.errorpart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 640px) { 
+    .video {
+        width: 300px;
+        height: auto;
+    }
+}

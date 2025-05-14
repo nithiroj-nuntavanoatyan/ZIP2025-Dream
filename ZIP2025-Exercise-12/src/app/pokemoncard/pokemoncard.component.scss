@@ -1,0 +1,155 @@
+header {
+  height: 200px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.pokemonCardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+.pokemonCard {
+  background-color: var(--main-card-default-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemonCard:hover {
+  box-shadow: 10px 10px var(--main-hoverpokemoncard-color);
+  transition: 0.5s;
+}
+
+.pokemonCard:focus {
+  background-color: var(--main-focuspokemoncard-color);
+  color: var(--main-focustext-color);
+}
+
+.pokemonImage {
+  border-radius: 2rem;
+  width: auto;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-block: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-block: 0;
+}
+
+.normal-type {
+  background-color: #aa9;
+}
+
+.fire-type {
+  background-color: rgb(199, 51, 25);
+}
+
+.water-type {
+  background-color: #39f;
+}
+.electric-type {
+  background-color: #fc3;
+}
+
+.grass-type {
+  background-color: #7c5;
+}
+
+.ice-type {
+  background-color: #66ccff;
+}
+
+.fighting-type {
+  background-color: #bb5544;
+}
+
+.posion-type {
+  background-color: #aa5599;
+}
+
+.ground-type {
+  background-color: #ddbb55;
+}
+
+.flying-type {
+  background-color: #8899ff;
+}
+
+.psychic-type {
+  background-color: #ff5599;
+}
+
+.bug-type {
+  background-color: #aabb22;
+}
+
+.rock-type {
+  background-color: #bbaa66;
+}
+
+.ghost-type {
+  background-color: #6666bb;
+}
+
+.dragon-type {
+  background-color: #4532be;
+}
+
+.dark-type {
+  background-color: #775544;
+}
+
+.steel-type {
+  background-color: #aaaabb;
+}
+
+.fairy-type {
+  background-color: #ee99ee;
+}
+
+button {
+  font-size: 1.2rem;
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 640px) {
+  .pokemonCardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .pokemonImage {
+    border-radius: 2rem;
+    width: auto;
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  header {
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}

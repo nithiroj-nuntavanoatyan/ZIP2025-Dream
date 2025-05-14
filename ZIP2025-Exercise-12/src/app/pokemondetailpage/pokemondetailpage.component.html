@@ -1,0 +1,28 @@
+<div class="pokemonwebformat">
+    <div class="pokemonpage" *ngIf="pokemonid" [class]="{
+        'normal-type': pokemonid.firsttype === 'Normal' , 
+        'fire-type': pokemonid.firsttype === 'Fire', 
+        'water-type': pokemonid.firsttype === 'Water', 
+        'electric-type': pokemonid.firsttype === 'Electric',
+        'grass-type': pokemonid.firsttype === 'Grass', 
+        'ice-type': pokemonid.firsttype === 'Ice', 
+        'fighting-type': pokemonid.firsttype === 'Fighting', 
+        'posion-type': pokemonid.firsttype === 'Poison', 
+        'ground-type': pokemonid.firsttype === 'Ground', 
+        'flying-type': pokemonid.firsttype === 'Flying',
+        'psychic-type': pokemonid.firsttype === 'Psychic',
+        'bug-type': pokemonid.firsttype === 'Bug',
+        'rock-type': pokemonid.firsttype === 'Rock',
+        'ghost-type': pokemonid.firsttype === 'Ghost',
+        'dragon-type': pokemonid.firsttype === 'Dragon',
+        'dark-type': pokemonid.firsttype === 'Dark',
+        'steel-type': pokemonid.firsttype === 'Steel',
+        'fairy-type': pokemonid.firsttype === 'Fairy',
+        }">
+        
+        <h2>You found {{ pokemonid.name }} !!!</h2>
+        <h3>Type: {{ pokemonid.firsttype }}<span *ngIf="pokemonid.secondtype"> / {{ pokemonid.secondtype }}</span></h3>
+        <img class="pokeImage" src="{{ pokemonid.imgsrc}}" [alt]="pokemonid.name" />
+        <a [routerLink]="['/home/pokemon']"><button>Back</button></a>
+    </div>
+</div>

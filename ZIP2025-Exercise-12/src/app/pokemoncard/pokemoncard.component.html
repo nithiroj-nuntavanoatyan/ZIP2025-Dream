@@ -1,0 +1,40 @@
+<header>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1024px-International_Pok%C3%A9mon_logo.svg.png"
+    alt="Pokemon">
+</header>
+
+<div class="pokemonCardGrid">
+    @for (pokemonid of pokemonId; track pokemonid.id) {
+    <div class="pokemonCard" tabindex="0" [class]="{
+        'normal-type': pokemonid.firsttype === 'Normal' , 
+        'fire-type': pokemonid.firsttype === 'Fire', 
+        'water-type': pokemonid.firsttype === 'Water', 
+        'electric-type': pokemonid.firsttype === 'Electric',
+        'grass-type': pokemonid.firsttype === 'Grass', 
+        'ice-type': pokemonid.firsttype === 'Ice', 
+        'fighting-type': pokemonid.firsttype === 'Fighting', 
+        'posion-type': pokemonid.firsttype === 'Poison', 
+        'ground-type': pokemonid.firsttype === 'Ground', 
+        'flying-type': pokemonid.firsttype === 'Flying',
+        'psychic-type': pokemonid.firsttype === 'Psychic',
+        'bug-type': pokemonid.firsttype === 'Bug',
+        'rock-type': pokemonid.firsttype === 'Rock',
+        'ghost-type': pokemonid.firsttype === 'Ghost',
+        'dragon-type': pokemonid.firsttype === 'Dragon',
+        'dark-type': pokemonid.firsttype === 'Dark',
+        'steel-type': pokemonid.firsttype === 'Steel',
+        'fairy-type': pokemonid.firsttype === 'Fairy',
+        }">
+        <h2>Id : {{ pokemonid.id}} </h2>
+        <h3> {{ pokemonid.name }} </h3>
+        <div>
+            <h4>
+                Type : {{pokemonid.firsttype}} {{pokemonid.secondtype}}
+            </h4>
+        </div>
+        <img class="pokemonImage" src="{{ pokemonid.imgsrc}}" alt="">
+        <a [routerLink]="['/home/pokemon', pokemonid.id]"><button>View</button></a>
+    </div>
+    }
+</div>
